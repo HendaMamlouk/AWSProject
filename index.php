@@ -20,6 +20,7 @@
        // echo 'connexion reussite <br>';
     }catch(Exception $e){
         die('Erreur : '.$e->getMessage());
+    }
  $stmt=$bdd->prepare('SELECT chemin FROM Images');
     $stmt->execute();
     $arr=$stmt->fetchAll(PDO::FETCH_ASSOC);
